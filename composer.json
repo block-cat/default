@@ -1,0 +1,31 @@
+{
+  "name": "block-cat/default",
+  "description": "The most implemented configuration for EMoldova portlets.",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0.0"
+  },
+  "authors": [{
+    "name": "BlockCat"
+  }],
+  "autoload": {
+    "psr-4": {
+      "BlockCat\\Default\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "BkC Default",
+      "category": "others",
+      "icon": {
+        "name": "fas fa-user-cog",
+        "backgroundColor": "#083",
+        "color": "#fff"
+      }
+    }
+  }
+}
