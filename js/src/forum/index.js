@@ -10,8 +10,10 @@ import removeRightsideMenu from './settings/removeRightsideMenu';
 import removeSidebarItems from './settings/removeSidebarItems';
 import removeTerminalPost from './settings/removeTerminalPost';
 import removeToolbar from './settings/removeToolbar';
+import changePaths from './settings/changePaths';
 
 app.initializers.add('block-cat/default', () => {
+  changePaths();
   changeIconFromMenu();
   removeLeftsideMenu();
   removeToolbar();
@@ -24,4 +26,4 @@ app.initializers.add('block-cat/default', () => {
   removeReplyPlaceholder();
   removeTerminalPost();
   removePane();
-});
+}, -20);

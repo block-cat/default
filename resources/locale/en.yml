@@ -1,6 +1,7 @@
 block-cat-default:
   admin:
     settings:
+      title: "Settings"
       icon: "Icon"
       icon_help_text: "Change icon in sidebar menu for <em>{text}</em>"
       postControlsUp: "Add <em>Post Controls</em> on header"
@@ -31,3 +32,22 @@ block-cat-default:
       terminalPost_help_text: "Remove last action info from every discussion on main page"
       pane: "Remove <em>Pane</em>"
       pane_help_text: "Remove leftside pane on discussion page"
+    routes:
+      title: "Routes"
+      hint: "Original path:"
+      same_value: "Highlighted fields cannot have identical values!"
+      route_label: "New path for '{route}'"
+      discussion: "Set path for discussions without post number"
+      discussion.near: "Set path for discussions with post number"
+      flags: "Set path for flags page"
+      following: "Set path for following page"
+      index: "Set path for page with all discussions"
+      notifications: "Set path for notifications page"
+      settings: "Set path for user settings page"
+      tag: "Set path for tag page"
+      tags: "Set path for tags page"
+      user: "Set path for user page"
+      user.discussions: "Set path for user discussions page"
+      user.mentions: "Set path for user mentions page"
+      user.posts: "Set path for user posts page"
+      user.uploads: "Set path for user uploads page"
