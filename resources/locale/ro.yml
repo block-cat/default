@@ -51,3 +51,6 @@ block-cat-default:
       user.mentions: "Setați calea pentru pagina mențiunilor utilizatorului"
       user.posts: "Setați calea pentru pagina postărilor utilizatorului"
       user.uploads: "Setați calea pentru pagina încărcărilor utilizatorului"
+
+  forum:
+    confirm_exit_message: "Sigur doriți să mergeți la e-Moldova?"
