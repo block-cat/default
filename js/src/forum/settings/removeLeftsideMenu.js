@@ -11,7 +11,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for main page menu
-    if (defaultSettings.mainPageMenu) {
+    if (defaultSettings.mainPageMenu.value === 1) {
       // check if exists 'nav' item
       if (items.has('nav')) {
         // remove 'nav' item

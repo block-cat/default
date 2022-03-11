@@ -11,7 +11,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for post reply
-    if (defaultSettings.postReply) {
+    if (defaultSettings.postReply.value === 1) {
       // map all children of 'view'
       view.children.map((discuss) => {
         // check if exists post with key 'reply'

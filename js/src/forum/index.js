@@ -10,11 +10,11 @@ import removeRightsideMenu from './settings/removeRightsideMenu';
 import removeSidebarItems from './settings/removeSidebarItems';
 import removeTerminalPost from './settings/removeTerminalPost';
 import removeToolbar from './settings/removeToolbar';
-import changePaths from './settings/changePaths';
+import changeIconForDrafts from './settings/changeIconForDrafts';
 
 app.initializers.add('block-cat/default', () => {
-  changePaths();
   changeIconFromMenu();
+  changeIconForDrafts();
   removeLeftsideMenu();
   removeToolbar();
   removeActionItems();
@@ -26,4 +26,4 @@ app.initializers.add('block-cat/default', () => {
   removeReplyPlaceholder();
   removeTerminalPost();
   removePane();
-}, -20);
+});

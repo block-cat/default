@@ -13,7 +13,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for refresh button
-    if (defaultSettings.refreshButton) {
+    if (defaultSettings.refreshButton.value === 1) {
       // check if exists 'refresh' item
       if (items.has('refresh')) {
         // remove 'refresh' item
@@ -21,7 +21,7 @@ export default function () {
       }
     }
     // check if is set '1' for mark all as read button
-    if (defaultSettings.markAllAsReadButton) {
+    if (defaultSettings.markAllAsReadButton.value === 1) {
       // check if exists 'markAllAsRead' item
       if (items.has('markAllAsRead')) {
         // remove 'markAllAsRead' item

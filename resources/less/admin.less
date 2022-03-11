@@ -23,70 +23,23 @@
         }
     }
 }
-.SettingsGroup {
-    display: flex;
-    column-count: 2;
-    column-gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
 
-    .Settings, .Routes {
-        border: 1px solid #e8ecf3;
-        padding: 10px 20px;
-        border-radius: 4px;
-        flex: 1 1;
-        display: inline-grid;
-        grid-template-rows: min-content;
+.Settings{
+    border: 1px solid #e8ecf3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 
-        > label {
-            float: left;
-            font-weight: bold;
-            color: #667c99;
-            margin-bottom: 10px;
-            font-size: large;
-        }
+    .Settings-items {
+        display: grid;
+        grid-template-columns: auto auto;
     }
-}
 
-.Default-Routes-Field-Wrap {
-    position: relative;
-    max-width: 400px;
-}
-
-.Default-Routes-Input {
-    padding-top: 1.3em;
-    height: auto;
-}
-
-.Default-Routes-Placeholder {
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 13px 0;
-    transition: .2s transform;
-    font-size: 1.2em;
-    transform-origin: 0 0;
-    transform: translate(0) scale(1);
-    pointer-events: none;
-    color: #aaa;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.Default-Routes-Placeholder-Hint {
-    display: none;
-    color: #aaa;
-}
-
-.Default-Routes-Input:focus + .Default-Routes-Placeholder,
-.Default-Routes-Field--with-value .Default-Routes-Placeholder {
-    transform: translate(4px, -6px) scale(0.75);
-    color: #333;
-
-    .Default-Routes-Placeholder-Hint {
-        display: inline-block;
+    > label {
+        // float: left;
+        font-weight: bold;
+        color: #667c99;
+        margin-bottom: 10px;
+        font-size: large;
     }
 }

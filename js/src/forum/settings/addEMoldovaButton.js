@@ -26,7 +26,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
     
     // check if is set '1' for EMoldova button
-    if (defaultSettings.emoldovaButton) {
+    if (defaultSettings.emoldovaButton.value === 1) {
       const { history } = app;
 
       // check if is on Main Page

@@ -11,7 +11,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
     
     // check if is set '1' for pane
-    if (defaultSettings.pane) {
+    if (defaultSettings.pane.value === 1) {
       // disable pin button for pane 
       app.pane.disable();
     }
@@ -22,7 +22,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
     
     // check if is set '1' for pane
-    if (defaultSettings.pane) {
+    if (defaultSettings.pane.value === 1) {
       for (const i of this.element.children) {
         // check classname for pane
         if (i.className === 'DiscussionPage-list') {

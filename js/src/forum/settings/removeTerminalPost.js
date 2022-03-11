@@ -11,7 +11,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for terminal post
-    if (defaultSettings.terminalPost) {
+    if (defaultSettings.terminalPost.value === 1) {
       // check if exists 'terminalPost' item
       if (items.has('terminalPost')) {
         // remove 'terminalPost' item

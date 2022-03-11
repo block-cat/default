@@ -20,7 +20,7 @@ export default function () {
     const controls = PostControls.controls(this.attrs.post, this);
 
     // check if is set '1' for mergging controls
-    if (defaultSettings.discussionControlsToPost) {
+    if (defaultSettings.discussionControlsToPost.value === 1) {
       // check if is first post
       if (this.attrs.post.number() === 1) {
         // get type and id of discussion from post info
@@ -43,7 +43,7 @@ export default function () {
     }
 
     // check if is set '1' for duplication
-    if (defaultSettings.postControlsUp) {
+    if (defaultSettings.postControlsUp.value === 1) {
       // add item 'controls' on post header
       // like in original Flarum code
       items.add(
@@ -82,7 +82,7 @@ export default function () {
     const controls = PostControls.controls(this.attrs.post, this);
 
     // check if is set '1' for mergging controls
-    if (defaultSettings.discussionControlsToPost) {
+    if (defaultSettings.discussionControlsToPost.value === 1) {
       // check if is first post
       if (this.attrs.post.number() === 1) {
         // get type and id of discussion from post info

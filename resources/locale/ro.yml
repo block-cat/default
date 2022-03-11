@@ -2,8 +2,10 @@ block-cat-default:
   admin:
     settings:
       title: "Setări"
-      icon: "Iconiță"
-      icon_help_text: "Modificați iconița din meniul lateral pentru <em>{text}</em>"
+      allDiscussionsIcon_icon: "Iconiță <em>{text}</em>"
+      allDiscussionsIcon_icon_help_text: "Modificați iconița din meniul lateral pentru <em>{text}</em>"
+      draftsIcon_icon: "Iconiță <em>Schițe</em>"
+      draftsIcon_icon_help_text: "Modificați iconița pentru butonul <em>Schițe</em>"
       postControlsUp: "Adăugarea opțiunilor pentru postări în antet"
       postControlsUp_help_text: "Dublați opțiunile pentru postări în antet dacă acestea sunt foarte mari"
       discussionControlsToPost: "Unirea opțiunilor"
@@ -32,25 +34,6 @@ block-cat-default:
       terminalPost_help_text: "Eliminați informația ultimei activități din fiecare discuție de pe pagina principală"
       pane: "Eliminarea panoului de discuții"
       pane_help_text: "Eliminați panoul de discuții din stânga de pe pagina discuției"
-    routes:
-      title: "Rute"
-      hint: "Calea originală:"
-      same_value: "Câmpurile evidențiate nu pot avea valori identice!"
-      route_label: "Cale nouă pentru '{route}'"
-      discussion: "Setați calea pentru discuțiile fără numărul răspunsului"
-      discussion.near: "Setați calea pentru discuțiile cu numărul răspunsului"
-      flags: "Setați calea pentru pagina de raportări"
-      following: "Setați calea pentru pagina de abonări"
-      index: "Setați calea pentru pagina cu toate discuțiile"
-      notifications: "Setați calea pentru pagina de notificări"
-      settings: "Setați calea pentru pagina setărilor utilizatorului"
-      tag: "Setați calea pentru pagina etichetei"
-      tags: "Setați calea pentru pagina etichetelor"
-      user: "Setați calea pentru pagina utilizatorului"
-      user.discussions: "Setați calea pentru pagina discuțiilor utilizatorului"
-      user.mentions: "Setați calea pentru pagina mențiunilor utilizatorului"
-      user.posts: "Setați calea pentru pagina postărilor utilizatorului"
-      user.uploads: "Setați calea pentru pagina încărcărilor utilizatorului"
 
   forum:
     confirm_exit_message: "Sigur doriți să mergeți la e-Moldova?"

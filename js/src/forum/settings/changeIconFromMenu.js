@@ -13,7 +13,7 @@ export default function () {
     const params = app.search.stickyParams();
     
     // check if is set icon for main page menu
-    if (defaultSettings.allDiscussionsIcon !== "") {
+    if (defaultSettings.allDiscussionsIcon.value !== "") {
       // check if exists 'allDiscussions' item
       if (items.has('allDiscussions')) {
         // change 'allDiscussions' item
@@ -23,7 +23,7 @@ export default function () {
             {
               href: app.route('index', params),
               // change the icon...
-              icon: defaultSettings.allDiscussionsIcon,
+              icon: defaultSettings.allDiscussionsIcon.value,
             },
             app.translator.trans('core.forum.index.all_discussions_link')
           ),

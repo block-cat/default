@@ -13,7 +13,7 @@ export default function () {
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for controls button
-    if (defaultSettings.controlsButton) {
+    if (defaultSettings.controlsButton.value === 1) {
       // check if exists 'controls' item
       if (items.has('controls')) {
         // remove 'controls' item
@@ -21,7 +21,7 @@ export default function () {
       }
     }
     // check if is set '1' for timeline
-    if (defaultSettings.scrubberDiv) {
+    if (defaultSettings.scrubberDiv.value === 1) {
       // check if exists 'scrubber' item
       if (items.has('scrubber')) {
         // remove 'scrubber' item

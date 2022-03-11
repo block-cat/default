@@ -7,14 +7,13 @@ import { extend } from 'flarum/extend';
 import IndexPage from 'flarum/components/IndexPage';
 
 export default function () {
-  extend(IndexPage.prototype, 'view', function(view) {
+  extend(IndexPage.prototype, 'oncreate', function() {
     // get all settings from Flarum API
     const defaultSettings = JSON.parse(app.forum.attribute('block-cat.defaultSettings'));
 
     // check if is set '1' for toolbar
-    if (defaultSettings.toolbar) {
-      // remove first element from 'view.children[1].children[0].children[1].children'
-      view.children[1].children[0].children[1].children.shift();
+    if (defaultSettings.toolbar.value === 1) {
+      this.$('.IndexPage-toolbar').remove();
     }
   });
 };
