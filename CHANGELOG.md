@@ -1,0 +1,15 @@
+### 1.0.0
+- Posibilitatea personalizării iconiței pentru meniul principal din stânga.
+- Posibilitatea eliminării barei de instrumente de deasupra listei de articole.
+- Posibilitatea eliminării aparte a elementelor barei de instrumete de deasupra listei de articole.
+- Posibilitatea eliminării butonului de control din partea dreaptă a paginii de discuții.
+- Posibilitatea dublării opțiunilor pentru comentarii voluminoase.
+- Posibilitatea eliminării afișării numărului de comentarii pentru fiecare articol din lista de discuții.
+- Posibilitatea eliminării ariei pentru răspuns de la sfârșitul comentariilor.
+- Posibilitatea eliminării panoului cu articole din stânga paginii de articol.
+- Posibilitatea eliminării complete a meniului principal din stânga.
+- Posibilitatea eliminării meniului din dreapta paginii de articol.
+- Posibilitatea eliminării liniei timpului.
+- Posibilitatea unirii opțiunilor din butonul de control pentru primul comentariu.
+- Posibilitatea adăugării butonului înapoi către EMoldova.
+- Posibilitatea eliminării afișării informațiilor ultimelor activități.

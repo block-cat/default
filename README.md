@@ -2,22 +2,46 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/block-cat/default.svg)](https://packagist.org/packages/block-cat/default)
 
-A [Flarum](http://flarum.org) extension. The most implemented configuration for EMoldova portlets.
+**Extensia nu este publicată pe [Packagist](https://packagist.org/)!**
 
-### Installation
+Aceasta este o extensie [Flarum](https://flarum.org/) care oferă niște posibilități de configurare rapide a portletelor după câteva opțiuni generale.
 
-Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
+![](https://i.imgur.com/1Rcls8h.png)
+
+Majoritatea setărilor sunt prezentate în panoul de administrare ca pe niște elemente `ON/OFF`, atât cu descriere textuală, cât și vizuală.
+
+## Compatibilitate
+
+Această extensie este compatibilă cu versiunea `1.0.0` de [Flarum](https://flarum.org/).
+
+## Instalare
+
+Pentru instalarea extensiei trebuie executată următoarea comandă Composer:
 
 ```sh
-composer require block-cat/default
+composer require block-cat/default *@dev
 ```
 
-### Updating
+## Actualizare
+
+Pentru actualizarea extensiei trebuie executată următoarea comandă Composer:
 
 ```sh
 composer update block-cat/default
+php flarum migrate
+php flarum cache:clear
 ```
 
-### Links
+## Dezinstalare
 
-- [Packagist](https://packagist.org/packages/block-cat/default)
+Pentru dezinstalarea extensiei trebuie executată următoarea comandă Composer:
+
+```sh
+composer remove block-cat/default
+php flarum cache:clear
+```
+
+## Link-uri utile
+
+- [Cod sursă pe GitHub](https://github.com/block-cat/default)
+- [Changelog](CHANGELOG.md)

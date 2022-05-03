@@ -20,7 +20,6 @@
   "extra": {
     "flarum-extension": {
       "title": "BkC Default",
-      "category": "others",
       "icon": {
         "name": "fas fa-user-cog",
         "backgroundColor": "#083",
